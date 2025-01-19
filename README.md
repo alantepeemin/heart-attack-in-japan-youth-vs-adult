@@ -1,11 +1,11 @@
-## heart-attack-in-japan-youth-vs-adult  
+# heart-attack-in-japan-youth-vs-adult  
 Data analysis project for machine learning course.  
 
 ## Makine Öğrenimi ile Kalp Krizi Tahmini 
 # Proje Özeti 
 Bu proje, sağlıkla ilgili özellikler içeren bir veri setine dayanarak kalp krizi meydana gelmesini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti Japonya Kalp Krizi Veri Seti olarak adlandırılmaktadır. Amaç, bir kişinin çeşitli sağlık göstergelerine dayanarak kalp krizi riski altında olup olmadığını sınıflandırmak için makine öğrenimi modelleri geliştirmek ve değerlendirmektir.  
 
-# Veri Seti Açıklaması
+## Veri Seti Açıklaması
 Veri seti şu sütunlardan oluşmaktadır:  
 
 * **Age (Yaş):**   Kişinin yaşı.  
@@ -24,8 +24,9 @@ Veri seti şu sütunlardan oluşmaktadır:
 * **Systolic BP (Sistolik Kan Basıncı):**   Kişinin sistolik kan basıncı.  
 * **Diastolic BP (Diastolik Kan Basıncı):**   Kişinin diyastolik kan basıncı.  
 * **Family History (Aile Geçmişi):**   Kişinin ailede kalp hastalığı geçmişi olup olmadığını belirtir.  
-* **Heart Attack Occurrence (Kalp Krizi Durumu):**   Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).  
-# Ana Özellikler  
+* **Heart Attack Occurrence (Kalp Krizi Durumu):**   Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).
+  
+## Ana Özellikler  
 Veri Ön İşleme: Gereksiz sütunlar kaldırılarak ve kategorik değişkenler kodlanarak veri temizlenmiştir.  
 Özellik Ölçeklendirme: Sayısal özellikler StandardScaler ile ölçeklendirilmiştir.  
 Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendirilmiştir:  
@@ -34,7 +35,7 @@ Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendir
 * **K-Nearest Neighbors ( KNN )** 
 * **K-Means Clustering**
 * 
-### Değerlendirme
+### Algoritma Karşılaştırması
 Projede dört farklı makine öğrenmesi modeli denendi: Lojistik Regresyon, Random Forest, Gradient Boosting, ve K-Nearest Neighbors 
 (KNN). Her bir modelin kalp krizi riskini tahmin etme performansı karşılaştırıldı.    
 
@@ -47,8 +48,17 @@ Projede dört farklı makine öğrenmesi modeli denendi: **Lojistik Regresyon**,
 | **Gradient Boosting**     | %89.81                  | %0                       | %0                        | %0           | Negatif sınıflar için iyi, pozitif sınıflarda başarısız |
 | **K-Nearest Neighbors**   | %89.20                  | %6.52                    | %0.49                     | %0.91        | Negatiflerde iyi, pozitiflerde zayıf |
 
+## Değerlendirme
+Bu projede, kalp krizi riskini tahmin etmek için Lojistik Regresyon, Random Forest, Gradient Boosting ve K-Nearest Neighbors (KNN) algoritmaları kullanıldı. Her algoritmanın performansı çeşitli metriklerle değerlendirildi. Genel olarak, modeller negatif sınıfları (kalp krizi geçirmeyen bireyler) doğru bir şekilde tahmin ederken, pozitif sınıfları (kalp krizi geçiren bireyler) tahmin etmekte zorlandılar.
 
-# Proje Yapısı  
+Lojistik Regresyon, doğruluğu düşük olmasına rağmen pozitif sınıfları bir miktar yakalayabilen tek modeldi. Bununla birlikte, bu modelin genel performansı, pozitif sınıflarda düşük kesinlik ve F1-skoru nedeniyle zayıf kaldı. Random Forest ve Gradient Boosting modelleri, negatif sınıflarda mükemmel bir başarı göstererek %100'e yakın doğruluk sağladılar. Ancak, her iki model de pozitif sınıflarda hiçbir başarı gösteremedi, yani kalp krizi geçiren bireyleri tahmin etme konusunda tamamen başarısız oldular. KNN algoritması da negatif sınıflarda yüksek başarı gösterse de pozitif sınıflarda düşük performans sergiledi.
+
+Bu sonuçların ana nedeni, veri setindeki sınıf dengesizliği olabilir. Eğer kalp krizi geçiren bireylerin sayısı çok azsa, modeller bu sınıfı öğrenmekte zorlanabilir ve bu da pozitif sınıfları doğru tahmin edememelerine yol açabilir. Ayrıca, kullanılan özelliklerin pozitif sınıfları ayırt etmek için yeterince belirleyici olmaması da bir başka etkendir. Örneğin, modeller sadece genel sağlık göstergelerine dayanarak pozitif sınıfları belirlemekte zorlanabilir. Bununla birlikte, modeller genellikle doğruluk metrikleri üzerinden optimize edilir ve pozitif sınıfların çok az olduğu bir veri setinde doğruluğu artırmak, negatif sınıfların doğru tahminiyle sağlanabilir. Bu da modellerin pozitif sınıfları göz ardı etmesine neden olur.
+
+Sonuç olarak, sınıf dengesizliği ve verinin yetersiz temsil edilmesi, algoritmaların pozitif sınıfları tahmin etme yeteneğini sınırlamıştır. Daha iyi sonuçlar elde edebilmek için, veri setinin dengelenmesi, sınıf ağırlıkları üzerinde çalışılması ve pozitif sınıfı daha iyi ayırt eden yeni özelliklerin eklenmesi gerekmektedir.
+
+
+## Proje Yapısı  
 MachineLearningFinal.ipynb: Veri ön işleme, model eğitimi ve değerlendirmesi için kodları içeren ana Jupyter not defteri.  
 japan_heart_attack_dataset.csv: Analiz için kullanılan veri seti (gizlilik nedeniyle depo içerisine dahil edilmemiştir).  
 
@@ -70,25 +80,25 @@ Bu projeyi yerel ortamınızda çalıştırmak için:
 4. Jupyter not defterini açın:  
    ```bash
    jupyter notebook
-# Kullanım
+## Kullanım
 japan_heart_attack_dataset.csv veri setini not defterine yükleyin.   
 Not defterindeki hücreleri çalıştırarak verileri ön işleyin, modelleri eğitin ve sonuçları değerlendirin.  
 Model performansını ROC eğrileri, karışıklık matrisleri ve diğer metriklerle görselleştirin.   
-# Sonuçlar   
+## Sonuçlar   
 Modeller, çeşitli performans metriklerine göre değerlendirilmiştir. Sonuçlar, Rastgele Orman Sınıflandırıcısı modelinin en yüksek performansı sağladığını göstermektedir. Aşağıdaki metriklere odaklanılmıştır:   
 (Accuracy, Precision, Recall, F1-Score, ROC-AUC )    
 
-# Görselleştirme   
+## Görselleştirme   
 Ana görselleştirmeler şunları içermektedir:   
 * Veri kümesinin korelasyon ısı haritası.
 * Model değerlendirmesi için ROC eğrileri.
 * Sınıflandırma performansını değerlendirmek için karışıklık matrisleri.
 
  
-# Katkıda Bulunma  
+## Katkıda Bulunma  
 Bu projeye katkıda bulunmak istiyorsanız, depoyu fork'layabilir ve önerilerinizi içeren bir pull request gönderebilirsiniz.    
 
-# Lisans
+## Lisans
 Bu proje, MIT Lisansı altında açık kaynak olarak sunulmuştur.  
 
 
