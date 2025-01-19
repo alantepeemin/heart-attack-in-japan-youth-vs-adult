@@ -1,4 +1,4 @@
-## heart-attack-in-japan-youth-vs-adult   :jp:     
+## heart-attack-in-japan-youth-vs-adult  
 Data analysis project for machine learning course.  
 
 ## Makine Öğrenimi ile Kalp Krizi Tahmini 
