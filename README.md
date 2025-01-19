@@ -33,60 +33,24 @@ Lojistik Regresyon
 K-En Yakın Komşu
 K-Ortalamalar Kümeleme
 Değerlendirme: Modeller, doğruluk, kesinlik, geri çağırma, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.
+
 # Proje Yapısı
 MachineLearningFinal.ipynb: Veri ön işleme, model eğitimi ve değerlendirmesi için kodları içeren ana Jupyter not defteri.
 japan_heart_attack_dataset.csv: Analiz için kullanılan veri seti (gizlilik nedeniyle depo içerisine dahil edilmemiştir).
 README.md: Bu dosya, proje detaylarını açıklamaktadır.
-# Kurulum
-Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip edin:
 
-# Depoyu klonlayın:
+## Kurulum
 
-bash
-Kopyala
-Düzenle
-git clone https://github.com/kullaniciadiniz/kalp-krizi-tahmini.git
-cd kalp-krizi-tahmini
-Sanal bir ortam oluşturun ve etkinleştirin:
+Bu projeyi yerel ortamınızda çalıştırmak için:
 
-bash
-Kopyala
-Düzenle
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/yourusername/heart-attack-in-japan-youth-vs-adult.git
+   cd heart-attack-in-japan-youth-vs-adult
 python -m venv venv
 source venv/bin/activate   # Windows için: venv\Scripts\activate
-Gerekli bağımlılıkları yükleyin:
-
-bash
-Kopyala
-Düzenle
+\`\`\`
 pip install -r requirements.txt
-Jupyter not defterini çalıştırın:
 
-bash
-Kopyala
-Düzenle
 jupyter notebook
-Kullanım
-japan_heart_attack_dataset.csv veri setini not defterine yükleyin.
-Not defterindeki hücreleri çalıştırarak verileri ön işleyin, modelleri eğitin ve sonuçları değerlendirin.
-Model performansını ROC eğrileri, karışıklık matrisleri ve diğer metriklerle görselleştirin.
-Sonuçlar
-Modeller, çeşitli performans metriklerine göre değerlendirilmiştir. Sonuçlar, Rastgele Orman Sınıflandırıcısı modelinin en yüksek performansı sağladığını göstermektedir. Aşağıdaki metriklere odaklanılmıştır:
-
-Doğruluk (Accuracy)
-Kesinlik (Precision)
-Geri Çağırma (Recall)
-F1-Skoru (F1-Score)
-ROC-AUC
-Görselleştirme
-Ana görselleştirmeler şunları içermektedir:
-
-Veri setinin korelasyon ısı haritası.
-Model değerlendirmesi için ROC eğrileri.
-Sınıflandırma performansını değerlendirmek için karışıklık matrisleri.
-Katkıda Bulunma
-Bu projeye katkıda bulunmak istiyorsanız, depoyu fork'layabilir ve önerilerinizi içeren bir pull request gönderebilirsiniz.
-
-Lisans
-Bu proje, MIT Lisansı altında açık kaynak olarak sunulmuştur.
 
