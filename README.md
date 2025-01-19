@@ -33,7 +33,7 @@ Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendir
 * **Lojistik Regresyon**  
 * **K-Nearest Neighbors ( KNN )** 
 * **K-Means Clustering**
-* 
+  
 ### Algoritma Karşılaştırması
 Projede dört farklı makine öğrenmesi modeli denendi: Lojistik Regresyon, Random Forest, Gradient Boosting, ve K-Nearest Neighbors 
 (KNN). Her bir modelin kalp krizi riskini tahmin etme performansı karşılaştırıldı.    
