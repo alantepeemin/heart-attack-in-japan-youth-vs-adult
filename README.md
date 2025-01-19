@@ -32,7 +32,7 @@ Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendir
 * **Lojistik Regresyon**  
 * **K-Nearest Neighbors ( KNN )** 
 * **K-Means Clustering**  
-# Değerlendirme: 
+# Değerlendirme
 Modeller, accuracy, precision, recall, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
 
 # Proje Yapısı  
