@@ -7,37 +7,36 @@ Bu proje, sağlıkla ilgili özellikler içeren bir veri setine dayanarak kalp k
 # Veri Seti Açıklaması
 Veri seti şu sütunlardan oluşmaktadır:  
 
-Age (Yaş): Kişinin yaşı.  
-Gender (Cinsiyet): Kişinin cinsiyeti (1 erkek, 0 kadın).  
-Region (Bölge): Kişinin yaşadığı coğrafi bölge.  
-Smoking History (Sigara Kullanım Geçmişi): Kişinin sigara kullanım geçmişini belirtir.  
-Diabetes History (Diyabet Geçmişi): Kişinin diyabet geçmişini belirtir.  
-Hypertension History (Hipertansiyon Geçmişi): Kişinin hipertansiyon geçmişini belirtir.  
-Cholesterol Level (Kolesterol Seviyesi): Kişinin kolesterol seviyesi.  
-Physical Activity (Fiziksel Aktivite): Fiziksel aktivite seviyesi.  
-Diet Quality (Diyet Kalitesi): Kişinin diyet kalitesini belirtir.  
-Alcohol Consumption (Alkol Tüketimi): Kişinin alkol tüketip tüketmediğini belirtir.  
-Stress Levels (Stres Seviyeleri): Kişinin stres seviyesi.   
-BMI (Vücut Kitle İndeksi): Kişinin vücut kitle indeksi.  
-Heart Rate (Kalp Atış Hızı): Kişinin kalp atış hızı.  
-Systolic BP (Sistolik Kan Basıncı): Kişinin sistolik kan basıncı.  
-Diastolic BP (Diastolik Kan Basıncı): Kişinin diyastolik kan basıncı.  
-Family History (Aile Geçmişi): Kişinin ailede kalp hastalığı geçmişi olup olmadığını belirtir.  
-Heart Attack Occurrence (Kalp Krizi Durumu): Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).  
+* Age (Yaş): Kişinin yaşı.  
+* Gender (Cinsiyet): Kişinin cinsiyeti (1 erkek, 0 kadın).  
+* Region (Bölge): Kişinin yaşadığı coğrafi bölge.  
+* Smoking History (Sigara Kullanım Geçmişi): Kişinin sigara kullanım geçmişini belirtir.  
+* Diabetes History (Diyabet Geçmişi): Kişinin diyabet geçmişini belirtir.  
+* Hypertension History (Hipertansiyon Geçmişi): Kişinin hipertansiyon geçmişini belirtir.  
+* Cholesterol Level (Kolesterol Seviyesi): Kişinin kolesterol seviyesi.  
+* Physical Activity (Fiziksel Aktivite): Fiziksel aktivite seviyesi.  
+* Diet Quality (Diyet Kalitesi): Kişinin diyet kalitesini belirtir.  
+* Alcohol Consumption (Alkol Tüketimi): Kişinin alkol tüketip tüketmediğini belirtir.  
+* Stress Levels (Stres Seviyeleri): Kişinin stres seviyesi.   
+* BMI (Vücut Kitle İndeksi): Kişinin vücut kitle indeksi.  
+* Heart Rate (Kalp Atış Hızı): Kişinin kalp atış hızı.  
+* Systolic BP (Sistolik Kan Basıncı): Kişinin sistolik kan basıncı.  
+* Diastolic BP (Diastolik Kan Basıncı): Kişinin diyastolik kan basıncı.  
+* Family History (Aile Geçmişi): Kişinin ailede kalp hastalığı geçmişi olup olmadığını belirtir.  
+* Heart Attack Occurrence (Kalp Krizi Durumu): Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).  
 # Ana Özellikler  
 Veri Ön İşleme: Gereksiz sütunlar kaldırılarak ve kategorik değişkenler kodlanarak veri temizlenmiştir.  
 Özellik Ölçeklendirme: Sayısal özellikler StandardScaler ile ölçeklendirilmiştir.  
 Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendirilmiştir:  
-Rastgele Orman Sınıflandırıcısı  
-Lojistik Regresyon  
-K-En Yakın Komşu  
-K-Ortalamalar Kümeleme  
-Değerlendirme: Modeller, doğruluk, kesinlik, geri çağırma, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
+* Random Forest Algoritması  
+* Lojistik Regresyon  
+* K-Nearest Neighbors ( KNN ) 
+* K-Means Clustering 
+Değerlendirme: Modeller, accuracy, precision, recall, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
 
 # Proje Yapısı  
 MachineLearningFinal.ipynb: Veri ön işleme, model eğitimi ve değerlendirmesi için kodları içeren ana Jupyter not defteri.  
 japan_heart_attack_dataset.csv: Analiz için kullanılan veri seti (gizlilik nedeniyle depo içerisine dahil edilmemiştir).  
-README.md: Bu dosya, proje detaylarını açıklamaktadır.
 
 ## Kurulum  
 
@@ -63,18 +62,15 @@ Not defterindeki hücreleri çalıştırarak verileri ön işleyin, modelleri e�
 Model performansını ROC eğrileri, karışıklık matrisleri ve diğer metriklerle görselleştirin.   
 # Sonuçlar   
 Modeller, çeşitli performans metriklerine göre değerlendirilmiştir. Sonuçlar, Rastgele Orman Sınıflandırıcısı modelinin en yüksek performansı sağladığını göstermektedir. Aşağıdaki metriklere odaklanılmıştır:   
+(Accuracy, Precision, Recall, F1-Score, ROC-AUC )    
 
-Doğruluk (Accuracy)  
-Kesinlik (Precision)   
-Geri Çağırma (Recall)  
-F1-Skoru (F1-Score)   
-ROC-AUC    
-Görselleştirme   
-Ana görselleştirmeler şunları içermektedir:  
+# Görselleştirme   
+Ana görselleştirmeler şunları içermektedir:   
+* Veri kümesinin korelasyon ısı haritası.
+* Model değerlendirmesi için ROC eğrileri.
+* Sınıflandırma performansını değerlendirmek için karışıklık matrisleri.
+
  
-Veri setinin korelasyon ısı haritası.  
-Model değerlendirmesi için ROC eğrileri.  
-Sınıflandırma performansını değerlendirmek için karışıklık matrisleri.  
 # Katkıda Bulunma  
 Bu projeye katkıda bulunmak istiyorsanız, depoyu fork'layabilir ve önerilerinizi içeren bir pull request gönderebilirsiniz.    
 
