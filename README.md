@@ -7,23 +7,23 @@ Bu proje, sağlıkla ilgili özellikler içeren bir veri setine dayanarak kalp k
 # Veri Seti Açıklaması
 Veri seti şu sütunlardan oluşmaktadır:  
 
-* **Age (Yaş):** Kişinin yaşı.  
-* **Gender (Cinsiyet):** Kişinin cinsiyeti (1 erkek, 0 kadın).  
-* **Region (Bölge):** Kişinin yaşadığı coğrafi bölge.  
-* **Smoking History (Sigara Kullanım Geçmişi):** Kişinin sigara kullanım geçmişini belirtir.  
-* **Diabetes History (Diyabet Geçmişi):** Kişinin diyabet geçmişini belirtir.  
-* **Hypertension History (Hipertansiyon Geçmişi):** Kişinin hipertansiyon geçmişini belirtir.  
-* **Cholesterol Level (Kolesterol Seviyesi):** Kişinin kolesterol seviyesi.  
-* **Physical Activity (Fiziksel Aktivite):** Fiziksel aktivite seviyesi.  
-* **Diet Quality (Diyet Kalitesi):** Kişinin diyet kalitesini belirtir.  
-* **Alcohol Consumption (Alkol Tüketimi):** Kişinin alkol tüketip tüketmediğini belirtir.  
-* **Stress Levels (Stres Seviyeleri):** Kişinin stres seviyesi.   
-* **BMI (Vücut Kitle İndeksi):** Kişinin vücut kitle indeksi.  
-* **Heart Rate (Kalp Atış Hızı):** Kişinin kalp atış hızı.  
-* **Systolic BP (Sistolik Kan Basıncı):** Kişinin sistolik kan basıncı.  
-* **Diastolic BP (Diastolik Kan Basıncı):** Kişinin diyastolik kan basıncı.  
-* **Family History (Aile Geçmişi):** Kişinin ailede kalp hastalığı geçmişi olup olmadığını belirtir.  
-* **Heart Attack Occurrence (Kalp Krizi Durumu):** Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).  
+* **Age (Yaş):**   Kişinin yaşı.  
+* **Gender (Cinsiyet):**   Kişinin cinsiyeti (1 erkek, 0 kadın).  
+* **Region (Bölge):**   Kişinin yaşadığı coğrafi bölge.  
+* **Smoking History (Sigara Kullanım Geçmişi):**   Kişinin sigara kullanım geçmişini belirtir.  
+* **Diabetes History (Diyabet Geçmişi):**   Kişinin diyabet geçmişini belirtir.  
+* **Hypertension History (Hipertansiyon Geçmişi):**   Kişinin hipertansiyon geçmişini belirtir.  
+* **Cholesterol Level (Kolesterol Seviyesi):**   Kişinin kolesterol seviyesi.  
+* **Physical Activity (Fiziksel Aktivite):**   Fiziksel aktivite seviyesi.  
+* **Diet Quality (Diyet Kalitesi):**   Kişinin diyet kalitesini belirtir.  
+* **Alcohol Consumption (Alkol Tüketimi):**   Kişinin alkol tüketip tüketmediğini belirtir.  
+* **Stress Levels (Stres Seviyeleri):**   Kişinin stres seviyesi.   
+* **BMI (Vücut Kitle İndeksi):**   Kişinin vücut kitle indeksi.  
+* **Heart Rate (Kalp Atış Hızı):**   Kişinin kalp atış hızı.  
+* **Systolic BP (Sistolik Kan Basıncı):**   Kişinin sistolik kan basıncı.  
+* **Diastolic BP (Diastolik Kan Basıncı):**   Kişinin diyastolik kan basıncı.  
+* **Family History (Aile Geçmişi):**   Kişinin ailede kalp hastalığı geçmişi olup olmadığını belirtir.  
+* **Heart Attack Occurrence (Kalp Krizi Durumu):**   Hedef değişken; kişinin kalp krizi geçirip geçirmediğini belirtir (1 evet, 0 hayır).  
 # Ana Özellikler  
 Veri Ön İşleme: Gereksiz sütunlar kaldırılarak ve kategorik değişkenler kodlanarak veri temizlenmiştir.  
 Özellik Ölçeklendirme: Sayısal özellikler StandardScaler ile ölçeklendirilmiştir.  
