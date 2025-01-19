@@ -48,11 +48,39 @@ Bu projeyi yerel ortamınızda çalıştırmak için:
    git clone https://github.com/yourusername/heart-attack-in-japan-youth-vs-adult.git
    cd heart-attack-in-japan-youth-vs-adult
 2. Sanal Oturum Oluşturun ve Etkinleştirin
-   ```
+   ```bash
    python -m venv venv
    source venv/bin/activate   # Windows için: venv\Scripts\activate
-3.Bağımlılıkları yükleyin:
+3. Bağımlılıkları yükleyin:
+   ```bash
    pip install -r requirements.txt
+4. Jupyter not defterini açın:
+   ```bash
+   jupyter notebook
+# Kullanım
+japan_heart_attack_dataset.csv veri setini not defterine yükleyin.
+Not defterindeki hücreleri çalıştırarak verileri ön işleyin, modelleri eğitin ve sonuçları değerlendirin.
+Model performansını ROC eğrileri, karışıklık matrisleri ve diğer metriklerle görselleştirin.
+# Sonuçlar
+Modeller, çeşitli performans metriklerine göre değerlendirilmiştir. Sonuçlar, Rastgele Orman Sınıflandırıcısı modelinin en yüksek performansı sağladığını göstermektedir. Aşağıdaki metriklere odaklanılmıştır:
+
+Doğruluk (Accuracy)
+Kesinlik (Precision)
+Geri Çağırma (Recall)
+F1-Skoru (F1-Score)
+ROC-AUC
+Görselleştirme
+Ana görselleştirmeler şunları içermektedir:
+
+Veri setinin korelasyon ısı haritası.
+Model değerlendirmesi için ROC eğrileri.
+Sınıflandırma performansını değerlendirmek için karışıklık matrisleri.
+Katkıda Bulunma
+Bu projeye katkıda bulunmak istiyorsanız, depoyu fork'layabilir ve önerilerinizi içeren bir pull request gönderebilirsiniz.
+
+# Lisans
+Bu proje, MIT Lisansı altında açık kaynak olarak sunulmuştur.
+
 
   
 
