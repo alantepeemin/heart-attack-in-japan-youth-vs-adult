@@ -7,7 +7,7 @@ Bu proje, sağlıkla ilgili özellikler içeren bir veri setine dayanarak kalp k
 # Veri Seti Açıklaması
 Veri seti şu sütunlardan oluşmaktadır:  
 
-* Age (Yaş): Kişinin yaşı.  
+* **Age (Yaş):** Kişinin yaşı.  
 * Gender (Cinsiyet): Kişinin cinsiyeti (1 erkek, 0 kadın).  
 * Region (Bölge): Kişinin yaşadığı coğrafi bölge.  
 * Smoking History (Sigara Kullanım Geçmişi): Kişinin sigara kullanım geçmişini belirtir.  
