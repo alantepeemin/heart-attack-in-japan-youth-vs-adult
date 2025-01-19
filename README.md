@@ -1,6 +1,6 @@
-## heart-attack-in-japan-youth-vs-adult 
-# Heart Attack in Japan :jp:
+## heart-attack-in-japan-youth-vs-adult   :jp:     
 Data analysis project for machine learning course.  
+
 ## Makine Öğrenimi ile Kalp Krizi Tahmini 
 # Proje Özeti 
 Bu proje, sağlıkla ilgili özellikler içeren bir veri setine dayanarak kalp krizi meydana gelmesini tahmin etmeyi amaçlamaktadır. Kullanılan veri seti Japonya Kalp Krizi Veri Seti olarak adlandırılmaktadır. Amaç, bir kişinin çeşitli sağlık göstergelerine dayanarak kalp krizi riski altında olup olmadığını sınıflandırmak için makine öğrenimi modelleri geliştirmek ve değerlendirmektir.  
