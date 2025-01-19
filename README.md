@@ -32,7 +32,8 @@ Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendir
 * **Lojistik Regresyon**  
 * **K-Nearest Neighbors ( KNN )** 
 * **K-Means Clustering**  
-Değerlendirme: Modeller, accuracy, precision, recall, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
+# Değerlendirme: 
+Modeller, accuracy, precision, recall, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
 
 # Proje Yapısı  
 MachineLearningFinal.ipynb: Veri ön işleme, model eğitimi ve değerlendirmesi için kodları içeren ana Jupyter not defteri.  
