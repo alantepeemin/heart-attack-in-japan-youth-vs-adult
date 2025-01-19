@@ -32,9 +32,21 @@ Modelleme: Aşağıdaki makine öğrenimi modelleri uygulanmış ve değerlendir
 * **Random Forest Algoritması**  
 * **Lojistik Regresyon**  
 * **K-Nearest Neighbors ( KNN )** 
-* **K-Means Clustering**  
-# Değerlendirme
-Modeller, accuracy, precision, recall, F1 skoru ve ROC-AUC gibi metriklerle değerlendirilmiştir.  
+* **K-Means Clustering**
+* 
+### Değerlendirme
+Projede dört farklı makine öğrenmesi modeli denendi: Lojistik Regresyon, Random Forest, Gradient Boosting, ve K-Nearest Neighbors 
+(KNN). Her bir modelin kalp krizi riskini tahmin etme performansı karşılaştırıldı.    
+
+Projede dört farklı makine öğrenmesi modeli denendi: **Lojistik Regresyon**, **Random Forest**, **Gradient Boosting**, ve **K-Nearest Neighbors (KNN)**. Her bir modelin kalp krizi riskini tahmin etme performansı karşılaştırıldı.
+
+| **Algoritma**            | **Doğruluk (Accuracy)** | **Kesinlik (Precision)** | **Geri Çağırma (Recall)** | **F1-Score** | **Genel Performans**         |
+|--------------------------|-------------------------|--------------------------|---------------------------|--------------|------------------------------|
+| **Lojistik Regresyon**    | %50.88                  | %10.29                   | %49.83                    | %17.05       | Orta seviyede, dengesiz sonuç |
+| **Random Forest**         | %89.87                  | %0                       | %0                        | %0           | Negatif sınıflar için harika, pozitif sınıflarda başarısız |
+| **Gradient Boosting**     | %89.81                  | %0                       | %0                        | %0           | Negatif sınıflar için iyi, pozitif sınıflarda başarısız |
+| **K-Nearest Neighbors**   | %89.20                  | %6.52                    | %0.49                     | %0.91        | Negatiflerde iyi, pozitiflerde zayıf |
+
 
 # Proje Yapısı  
 MachineLearningFinal.ipynb: Veri ön işleme, model eğitimi ve değerlendirmesi için kodları içeren ana Jupyter not defteri.  
