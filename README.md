@@ -47,10 +47,8 @@ Bu projeyi yerel ortamınızda çalıştırmak için:
    ```bash
    git clone https://github.com/yourusername/heart-attack-in-japan-youth-vs-adult.git
    cd heart-attack-in-japan-youth-vs-adult
-python -m venv venv
-source venv/bin/activate   # Windows için: venv\Scripts\activate
-\`\`\`
-pip install -r requirements.txt
-
-jupyter notebook
+   ```python -m venv venv
+   ```source venv/bin/activate   # Windows için: venv\Scripts\activate
+   ```pip install -r requirements.txt
+   ```jupyter notebook
 
